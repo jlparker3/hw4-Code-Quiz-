@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Coding Quiz</title>
+</head>
+
+
+<body>
+
+
+
+    <div class="row">
+        <div class="col-sm-6">
+            <h3>View Highscore</h3>
+        </div>
+        <div class="scores"><a href=""></a></div>
+        <div class="col-sm-6 text-right">
+            <h3>Timer: <span id="timer"></span></h3>
+        </div>
+    </div>
+
+    <div class="container mt-5 ">
+        <div id="start-container" class=" text-center">
+            <h1>Code Quiz</h1>
+
+            <div class="controls">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur praesentium id molestias esse quod,
+                    numquam illo quos iste beatae tempore dolore veritatis. Dolor corporis nam quis! Perspiciatis cum
+                    voluptatibus doloribus.</p>
+
+                <button id="start-button">Start</button>
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="row">
+
+            <div class="col-sm-5 text-left">
+                <div id="question-container" class="hide">
+                    <div id="question">Question</div>
+                    <ul class="list-group">
+                        <li class="list-group-item"><button id="choice0" class="btn w-100">Answer 1</button></li>
+                        <li class="list-group-item"><button id="choice1" class="btn w-100">Answer 2</button></li>
+                        <li class="list-group-item"><button id="choice2" class="btn w-100">Answer 3</button></li>
+                        <li class="list-group-item"><button id="choice3" class="btn w-100">Answer 4</button></li>
+
+                    </ul>
+                    <div class="feedback" class="hide"></div>
+                </div>
+            </div>
+
+
+
+            <div class="initial-container hide">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <input type="text" id="initials">
+                        <button id="savebtn">
+                            Save
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="viewhighscore-container hide">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <h3 id="score"></h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <button id="gobackbtn">Go Back</button>
+                        <button id="clearbtn">Clear</button>
+                    </div>
+                </div>
+            </div>
+     
+
+
+        </div>
+
+
+        <script src="./script.js"> </script>
+
+</body>
+
+</html>
+
+<!-- 
+html
+    5 questions 
+    4 options
+    
+    have two options for each question (incorrect or correct) underneath the Q
+    8 pages total, 5 questions, 1 screen for high scores, 1 for start quiz,1 question per screen
+    screen 7 has a form 
+    link to view highscores at top left corner
+js 
+    timer
+        decrease time at the start of quiz
+        decrease more time if answer it incorrect by 30 seconds instead of by 1 sec
+    one question per page 
+    display correct or incorrect based on the users answer
+    display timer at top right corner of all screens
+        
+css  
+    sleek stlye
+        button has hover 
+        cream grey modern color background -->
