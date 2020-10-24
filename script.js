@@ -40,9 +40,7 @@ const startButton = document.getElementById('start-button')
 const questionContainerElement = document.getElementById('question-container')
 startButton.addEventListener('click', startQuiz)
 
-//pat code
-// var choiceEl = document.getElementById('choice')
-// var feedbackEl = document.getElementById('feedback')
+
 
 function startQuiz() {
 
@@ -57,22 +55,7 @@ function startQuiz() {
 
 function nextQuestion() {
 
-    //PATS CODE
-    // var currentQuestion = questions[currentQuestionIndex]
-    // var titleEl = document.getElementById('question');titleEl.textContent = currentQuestion.title 
 
-    // choiceEl.innerHTML ='';
-
-    // currentQuestion.choices.forEach(function(choice, i){
-    //     var optionButton = document.createElement('button')
-    //     optionButton.setAttribute('class', 'choice')
-    //     optionButton.setAttribute('value', choice)
-    //     optionButton.textContent = choice
-    //     optionButton.onclick = answerClick
-    //     choicesEl.appendChild(optionButton)
-    // })
-
-    //original code
     document.getElementById('question').textContent = questions[index].prompt
 
     for (let i = 0; i < questions[index].choices.length; i++) {
@@ -93,24 +76,7 @@ function nextQuestion() {
     }
 
 }
-//PATS CODE whole function
-// function isAnswerCorrect () {
-//     if(this.value !== questions[currentQuestionIndex].answer) {
-//         feedbackEl.textContent = "Wrong!"
 
-//     }
-//     else {
-//         feedbackEl.textContent = "Correct!"
-//     }
-//     currentQuestionIndex++
-//     if(currentQuestionIndex === questions.length) {
-//         console.log("Game over")
-//         //function to end quiz and prompt to input initals 
-//     } else {
-//         nextQuestion()
-//     }
-
-// }
 
 
 
@@ -139,28 +105,23 @@ function startTimer() {
 
 startButton.onclick = startQuiz;
 
-// //LEFT TODO
-// deduct time if answer is incorrect
-// highscore page
-//make sure all my questions show
 
 
 
 
 //high score page 
 
-// function highScore() {
-//     clearInterval (timerID)
-//     high
-//     document.getElementById('viewhighscore-container').classList.add('hide')
-//     banner.textContent = "High Scores"
-//     questions.textContent = localStorage.getItem("user") + ":" + localStoarge.getItem("score")
+function highScore() {
+    clearInterval (timerID)
+    document.getElementById('viewhighscore-container').classList.add('hide')
+    banner.textContent = "High Scores"
+    questions.textContent = localStorage.getItem("user") + ":" + localStoarge.getItem("score")
 
-//     document.getElementById('clearbtn').addEventListener("click", function () {
-//         localStorage.clear()
-//         questions.textContent = " ";
-//     })
-// }
+    document.getElementById('clearbtn').addEventListener("click", function () {
+        localStorage.clear()
+        questions.textContent = " ";
+    })
+}
 
 
 
