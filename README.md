@@ -20,3 +20,9 @@ THEN the game is over
 WHEN the game is over
 THEN I can save my initials and score
 
+## Link to coding quiz  
+https://jlparker3.github.io/hw4-Code-Quiz-/index.html
+
+##Screenshots of coding quiz
+
+ 
