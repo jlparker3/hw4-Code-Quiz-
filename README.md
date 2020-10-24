@@ -24,5 +24,8 @@ THEN I can save my initials and score
 https://jlparker3.github.io/hw4-Code-Quiz-/index.html
 
 ##Screenshots of coding quiz
+[Screen Shot 2020-10-24 at 8.25.05 AM.pdf](https://github.com/jlparker3/hw4-Code-Quiz-/files/5432949/Screen.Shot.2020-10-24.at.8.25.05.AM.pdf)
 
+
+<img width="1440" alt="Hw4" src="https://user-images.githubusercontent.com/68556793/97083106-ab3b3900-15d3-11eb-87f9-938dcf7c8e13.png">
  
